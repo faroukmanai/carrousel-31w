@@ -12,7 +12,7 @@ Author: Farouk Manai
 Plugin URI: https://github.com/faroukmanai/carrousel
 Description: Permet d'afficher dans une boite modale les images d'une galerie avec un système de navigation
 */
-function caroussel_enqueue(){
+function carrousel_enqueue(){
     $version_css = filemtime(plugin_dir_path( __FILE__ ) . "style.css");
     $version_js = filemtime(plugin_dir_path(__FILE__) . "js/carrousel.js");
 
@@ -29,12 +29,14 @@ function caroussel_enqueue(){
 }
 add_action('wp_enqueue_scripts', 'carrousel_enqueue');
 
-function creation_carrousel(){
-return `<button class="bouton__ouvrir">Ouvrir</button>
-        <div class="carrousel">
-        <button class="bouton__x">X</button>
-        <figure class="carrousel__figure"></figure>
-        <form class="carrousel__form"></form>
-        </div>'`;
-}
-add_shortcode('carrousel','creation_carrousel');
+function creation_carrousel()
+{
+return '<button class="bouton__ouvrir">Ouvrir</button>
+    <div class="carrousel">
+    <button class="bouton__x">X</button>
+    <figure class="carrousel__figure"></figure>
+    <form class="carrousel__form"></form>
+    </div>';
+}  
+
+add_shortcode('carrousel', 'creation_carrousel');

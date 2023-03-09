@@ -1,5 +1,20 @@
 /* la feuille de style du carrousel */
 /* le caroussel principale du carousel */
+.carrousel {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  transform: scale(0);
+  transition: transform 0.5s;
+  background-color: azure;
+}
+
+.carrousel--ouvrir {
+  transform: scale(1);
+}
+
 /* bouton fermeture de la boite modale */
 /*contenu des images carrousel*/
 /* le conteneur des boutons radios */
