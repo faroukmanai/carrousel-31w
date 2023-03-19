@@ -25,8 +25,8 @@
 /* bouton fermeture de la boite modale */
 .bouton__x {
   position: absolute;
-  top:40px;
-  right: 20px;
+  top:15px;
+  right: 15px;
   border-radius: 50%;
   padding: 5px 8px;
   background-color: rgb(231, 230, 230);
@@ -70,7 +70,7 @@
 
 .carrousel .bouton__precedent{
 top:50%;
-left:-3%;
+left:-25px;
 position: absolute;
 z-index: 3;
 font-size: 32px;
@@ -81,7 +81,7 @@ border: none;
 
 .carrousel .bouton__suivant{
   top:50%;
-  left:99.5%;
+  left:98%;
   position: absolute;
   z-index: 3;
   font-size: 32px;
